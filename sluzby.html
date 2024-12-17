@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="IMG/favicon.ico?" type="image/x-icon"  />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="navbar">
+        <nav>
+                <div class="logo">
+                   <a href="index.html"><img src="IMG/LOGO.png" alt=""></a>
+                </div>
+                <div class="barmenu">
+                    <ul class="sidemenu">
+                        <li class="menubutton" onclick=closesidemenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="rgb(103, 65, 136)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="cenik.html">Ceník </a></li>
+                        <li><a href="sluzby.html">Služby</a></li>
+                        <li><a href="rezervace.html">Rezervace</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        
+                    </ul>
+                    <ul class="menu">   
+                        <li class="hideonmobile"><a href="cenik.html"><h2>Ceník</h2> </a></li>
+                        <li class="hideonmobile"><a href="sluzby.html"><h2>Služby</h2></a></li>
+                        <li class="hideonmobile"><a href="rezervace.html"><h2>Rezervace</h2></a></li>
+                        <li class="hideonmobile"><a href="kontakt.html"><h2>Kontakt</h2></a></li>
+                        <li class="menubutton" onclick=showsidemenu()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="rgb(103, 65, 136)"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
+                </div>
+        </nav>
+            <script src="./js/hamburger.js"></script>
+    </section>
+    <section id="showcase">
+        <div id="showcase">
+            <div class="showcase-content">
+                <h1 class="l-heading svetla">Služby</h1>
+               <p class="svetla">Popis služeb které nabízíme </p>
+            </div>
+        </div>
+    </section>
+    <section class="pozadi">
+    <div class="masaze">
+        <img src="IMG/masaze-sluzby.jpg" height="600" width="500">
+        <div class="mas">
+        <h3>Masáž:</h3><br>
+        <h4>
+            Masáž je terapeutická technika, která využívá systematické pohyby rukou nebo speciálních nástrojů k manipulaci s měkkými tkáněmi těla. 
+            Cílem masáže je uvolnit svalové napětí, podpořit cirkulaci krve a lymfy, 
+            zmírnit bolest, zlepšit pohyblivost kloubů a navodit celkovou relaxaci těla i mysli.
+        </h4>
+        </div>
+    </div>
+    <div class="sauna">
+        <img src="IMG/sauna-sluzby.jpg" height="600" width="500">
+        <div class="mas">
+        <h3>Sauna:</h3>
+           <h4> Sauna je relaxační zařízení, kde se využívá vysoké teploty a nízké vlhkosti (suchá sauna) nebo vysoké vlhkosti (parní sauna) k prohřívání těla.
+            Pobyt v sauně podporuje detoxikaci, zlepšuje krevní oběh, uvolňuje svaly, posiluje imunitu a přispívá k celkové relaxaci.
+        </h4>
+        </div>
+    </div>
+    <div class="virivka">
+        <img src="IMG/virivka-sluzby.jpg" height="600" width="500">
+        <div class="mas">
+        <h3>Vířivka:</h3>
+        <h4>
+            Vířivka je relaxační zařízení, které využívá teplou vodu a masážní trysky k uvolnění těla a mysli.
+            Proudění vody poskytuje hydromasáž, která pomáhá zmírnit svalové napětí, podporuje krevní oběh, zlepšuje regeneraci a snižuje stres.
+        </h4> 
+        </div>
+    </div>
+    </section>
+    <section class="video pozadi">
+        <video width="720" height="480" controls>
+            <source src="video/maturitniprace.mp4" type="video/mp4">
+          </video>
+    </section>
+
+
+
+
+
+<footer>
+    <img src="IMG/LOGO.png" alt="" width="10%">
+    <p>© 2024 Patrik Slanina</p>
+        
+</footer>   
+</body>
+</html>
