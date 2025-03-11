@@ -150,3 +150,6 @@ footer {
     align-items: flex-end;
     
  }
+.stedni{
+  color: var(--primary-color);
+}

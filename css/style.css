@@ -14,10 +14,6 @@
     --third-color:rgb(200, 161, 224);
     --fourth-color: rgb(103, 65, 136);
 }
-.padding{
-    padding-top: 1px;
-    padding-bottom: 70px;
-}
 .center {
     text-align: center;
 }
@@ -34,9 +30,17 @@
 .pozadi{
     background-color: var(--primary-color);
 }
+.padding{
+    padding-top: 1px;
+    padding-bottom: 70px;
+}
 .padding2{
     padding-bottom: 10%;
 }
+.padding3{
+    padding-top: 3%;
+}
+
 h1{
     margin-top: 125px;
     margin-bottom: 0.5rem;
@@ -64,6 +68,14 @@ h4{
     font-weight: 700;
     line-height: 1.2;
     font-size: 1.3rem;
+}
+h5{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.89rem;
+     
 }
 
 nav{
@@ -221,7 +233,9 @@ nav ul li :hover{
     display: flex;
     justify-content: space-around;
     background-color: #fff;
+    text-decoration: none;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
@@ -392,4 +406,5 @@ footer img{
     justify-content: center;
     padding-bottom: 50px;
 }
+
 
