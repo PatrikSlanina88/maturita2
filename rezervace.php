@@ -1,3 +1,11 @@
+<?php
+include 'config.php'; // Připojení k databázi
+
+// Načtení nabídek z databáze
+$sql = "SELECT id, nazev FROM nabidka";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,52 +28,49 @@
                 <div class="text">
                    Rezervace online
                 </div>
-                <form action="#">
+                <form action="zpracovani.php" method="post">
                    <div class="form-row">
                       <div class="input-data">
-                         <input type="text" required>
+                         <input type="text" name="jmeno" required>
                          <div class="underline"></div>
                          <label for="">Jméno</label>
                       </div>
                       <div class="input-data">
-                         <input type="text" required>
+                         <input type="text" name="prijmeni" required>
                          <div class="underline"></div>
                          <label for="">Přijmení</label>
                       </div>
                    </div>
                    <div class="form-row">
                       <div class="input-data">
-                         <input type="text" required>
+                         <input type="text" name="email" required>
                          <div class="underline"></div>
                          <label for="">Váš email</label>
                       </div>
                       <div class="input-data">
-                         <input type="date" required>
+                         <input type="date" name="cas" required>
                          <div class="underline"></div>
                       </div>
-                   </div>
-                   <div class="form-row">
-                   <div class="input-data ">
-                    <div class="input-data">
-                        <p>Počet lidí</p>
-                        <select name="select" id="">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                        </select>
-                    </div>
-                      <div class="form-row submit-btn">
+                   </div> 
+                    
+                      <label for="nabidka">Vyberte nabídku:</label>
+                        <select name="nabidka" required>
+                            <option value="">-- Vyberte nabídku --</option>
+                            <?php
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<option value='".$row["id"]."'>".$row["nazev"]."</option>";
+                            }
+                            ?>
+                        </select><br><br>  
+                        <div class="form-row submit-btn">
                          <div class="input-data">
                             <div class="inner"></div>
-                            <input onclick="popup()" type="submit" value="submit">
+
                          </div>
                       </div>
                 </form>
                 </div>
-                <script src="./js/popup.js"></script>
+
     </section>
 </body>
 </html>
