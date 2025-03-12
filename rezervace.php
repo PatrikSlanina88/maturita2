@@ -65,8 +65,9 @@ $result = $conn->query($sql);
                         <div class="form-row submit-btn">
                          <div class="input-data">
                             <div class="inner"></div>
-
+                            <input type="submit" value="submit">
                          </div>
+                      </div>
                       </div>
                 </form>
                 </div>
